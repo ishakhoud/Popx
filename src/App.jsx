@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter , Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import WelcomePage from './components/WelcomePage';
@@ -9,7 +9,7 @@ import Account from './components/Account';
 
 function App() {
   return (
-  <Router>
+  <HashRouter>
     <Routes>
       <Route path ="/" element={<WelcomePage/>}/>
       <Route path="/register" element={<RegisterPage/>}/>
@@ -18,7 +18,7 @@ function App() {
       
 
     </Routes>
-  </Router>
+  </HashRouter>
     );
 }
 
